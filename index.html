@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0" >
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="">
+                    <h1>Movie Deck</h1>
+                </a>
+            </nav>
+        </header>
+                <!--   Search     -->
+        <section id="search-bar" class="search-bar">
+            <input type="search" name="search" id="search-input" placeholder="Search by name…"/>
+            <button id="search-button">Search</button>
+        </section>
+                <!--Sorting options-->
+        <div id="sorting-options" class="sorting-options">
+            <button id="sort-by-date" class="sort-button">Sort by date(oldest to latest)</button>
+            <button id="sort-by-rating" class="sort-button">Sort by rating(least to most)</button>
+        </div>
+                <!--Tabs-->
+        <div id="tabs-container" class="tabs-container">
+            <button id="all-tab" class="tabs">All</button>
+            <button id="favorites-tab" class="tabs">Favorites</button>
+        </div>
+                <!--Movie list & Pagination buttons-->
+
+        <article class="movie-list-pagination-btns">
+            <!--Movie list-->
+            <div class="movie-list" id="movie-list">
+                <!--Js code-->
+            </div>
+            <!--Pagination-->
+            <div class="pagination" id="pagination">
+                <button id="prev-btn" class="pagination-btn">Prev</button>
+                <button id="current-page-number-btn" class="pagination-btn">CurrentPage:1</button>
+                <button id="next-btn" class="pagination-btn">Next</button>
+            </div>
+        </article>
+    
+
+    <footer>
+        <p>© 2023 Movie Deck</p>
+    </footer>
+
+    <script src="./index.js"></script>
+    </body>
+
+    
+</html>

@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+/*header*/
+
+header{
+    background-color:black;
+    color: white;
+    display: flex;
+    text-align: center;
+    padding: 20px;
+}
+header>nav>a{
+    text-decoration: none;
+    color: white;
+}
+
+/*search*/
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+    
+}
+#search-input{
+    border-radius: 10px;
+    height: 30px;
+    width: 300px;
+    border: 2px solid black;
+    padding: 10px;
+}
+#search-button{
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    border: 2px solid black;
+    padding: 10px;
+    cursor: pointer;
+    background-color:darkcyan;
+    color: antiquewhite;
+}
+
+/*sorting options*/
+
+.sorting-options{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.sort-button{
+    border-radius: 6px;
+    border: none;
+    height: 30px;
+    width: 300px;
+    cursor: pointer;
+}
+/*indicate selected sort option*/
+.sort-button:active{
+    border: 2px solid crimson;
+}
+/*Tabs*/
+.tabs:active{
+    background-color:cornflowerblue;
+    color: antiquewhite;
+}
+.tabs{
+    width: 150px;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: gray;
+    color:whitesmoke;
+}
+
+/*Movie-list-pagination*/
+.movie-list-pagination-btns{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+/*Card Layout*/
+.card{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+}
+.votes-favorite{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.movie-list{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.poster{
+    width: 200px;
+    height: 300px;
+
+    object-fit:cover;
+    overflow: hidden;
+}
+
+/*----Card Layout----*/
+
+#pagination{
+    display:flex;
+    gap:20px
+}
+
+.pagination-btn{
+    border:none;
+    border-radius: 8px;
+    cursor:pointer;
+    padding:10px;
+}
+
+/*---Footer---*/
+
+footer{
+    background-color: black;
+    color: white;
+}
